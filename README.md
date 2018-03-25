@@ -1,7 +1,12 @@
 Speech-Recognizer
 =======================
 GMM-HMM을 통해 연속적으로 읽은 숫자(vector sequence)를 인식하는 프로그램이다. 단어들의 HMM을 만들고, Viterbi 알고리즘을 구현한다.
----------
+*****
+Implementation
+- Language: Python 2.7
+- Tool: Sublime Text
+- Duration: 2 weeks
+*****
 ## 1. HMM 구성하기
 각 단어들은 여러개의 발음 음소(phone)으로 이루어져있다. 각 음소는 5개(혹은 3개)의 state로 이루어져있고, Gaussian Mixture Model에 따라 10개의 pdf(39 dimension)를 따른다.
 각 음소의 모든 transition probability와 pdf는 주어져있다.
