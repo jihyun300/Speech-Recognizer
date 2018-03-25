@@ -8,7 +8,9 @@ GMM-HMM을 통해 연속적으로 읽은 숫자(vector sequence)를 인식하는
 - Duration: 2 weeks
 ### Process
   [1. HMM 구성하기](#1-hmm-구성하기)
+  
   [2. Viterbi Algorighm](#2-viterbi-algorithm)
+  
 *****
 ## 1. HMM 구성하기
 각 단어들은 여러개의 발음 음소(phone)으로 이루어져있다. 각 음소는 5개(혹은 3개)의 state로 이루어져있고, Gaussian Mixture Model에 따라 10개의 pdf(39 dimension)를 따른다.
