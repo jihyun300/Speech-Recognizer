@@ -9,7 +9,7 @@ GMM-HMM을 통해 연속적으로 읽은 숫자(vector sequence)를 인식하는
 ### Process
   [1. HMM 구성하기](#1-hmm-구성하기)
   
-  [2. Viterbi Algorighm](#2-viterbi-algorithm)
+  [2. Viterbi Algorithm](#2-viterbi-algorithm)
   
 *****
 ## 1. HMM 구성하기
@@ -23,7 +23,7 @@ GMM-HMM을 통해 연속적으로 읽은 숫자(vector sequence)를 인식하는
 마지막 단어들을 연결할때는 주어진 bigram에 따라 probability 계산을 다시 해줘야 한다.
 HMM을 만드는데 힘들었던 부분은 앞 뒤로 state를 붙일 때마다, transition probability나 gaussian constant를 계속 업데이트해줘야 하는 것이었다.
 
-## 2. Viterbi Algoritm
+## 2. Viterbi Algorithm
 이제 Viterbi알고리즘을 살펴보자.
 <p align="center">
 <img src="/screenshots/viterbi.png" width="80%"></img>
