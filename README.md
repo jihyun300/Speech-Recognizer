@@ -8,7 +8,7 @@ GMM-HMM을 통해 연속적으로 읽은 숫자(vector sequence)를 인식하는
 
 그렇다면, 먼저 해야하는 것은 모든 음소에 대한 각 HMM을 만들고, 그 음소들을 모아 각 단어의 HMM을 만든다. (즉, state를 연결하는 것이다.) 
 이후에는 마찬가지로 모든 단어들의 hmm을 묶어 연속적인 단어들을 인식할 수 있는 HMM을 구성한다. 그러면 아래 그림과 같은 거대한 모델이 된다. 
-![Alt text](/screenshots/whole-hmm.png)
+![Image](/screenshots/whole-hmm.png){: width="60px" height="50px"}
 마지막 단어들을 연결할때는 주어진 bigram에 따라 probability 계산을 다시 해줘야 한다.
 HMM을 만드는데 힘들었던 부분은 앞 뒤로 state를 붙일 때마다, transition probability나 gaussian constant를 계속 업데이트해줘야 하는 것이었다.
 
@@ -17,8 +17,8 @@ HMM을 만드는데 힘들었던 부분은 앞 뒤로 state를 붙일 때마다,
 input으로 주어진 vector sequence가 각 어느 state에서 나왔는지를 계산한다. 
 계산시 필요한 transition probability(a)나 emmision probability(b)는 HMM을 만들며 미리 계산해놓았으며, input vector에 따라 델타(cumulative probability)와 프사이(state sequence)만 계산해주면 된다.
 마지막으로 viterbi로 구한 state sequence를 단어로 변환해주면 우리가 원하던 단어 sequence가 나온다.
-![Alt text](/screenshots/result.png)
-![Alt text](/screenshots/ConfusionMatrix.png "Confusion Matrix")
+![Image](/screenshots/result.png){: width="40%" height="20px"}
+![Image](/screenshots/ConfusionMatrix.png){: width="40%" height="20px"}
 ### reference
   #### - <https://en.wikipedia.org/wiki/Speech_recognition>
   #### - <https://www.vocal.com/echo-cancellation/viterbi-algorithm-in-speech-enhancement-and-hmm/>
