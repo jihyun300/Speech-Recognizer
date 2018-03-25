@@ -18,12 +18,16 @@ HMM을 만드는데 힘들었던 부분은 앞 뒤로 state를 붙일 때마다,
 <p align="center">
 <img src="/screenshots/viterbi.png" width="80%"></img>
 </p>
+
 input으로 주어진 vector sequence가 각 어느 state에서 나왔는지를 계산한다. 
 계산시 필요한 transition probability(a)나 emmision probability(b)는 HMM을 만들며 미리 계산해놓았으며, input vector에 따라 델타(cumulative probability)와 프사이(state sequence)만 계산해주면 된다.
 마지막으로 viterbi로 구한 state sequence를 단어로 변환해주면 우리가 원하던 단어 sequence가 나온다.
+
 <p align="center">
 <img src="/screenshots/result.png" width="30%"></img> <img src="/screenshots/ConfusionMatrix.PNG" width="60%"></img>
 <p align="center">
+  
+위의 왼쪽 screenshot은 실제 각 speech file별 찾아낸 결과이고, 오른쪽 screenshot은 프로그램의 성능(confusion matrix)을 나타내고 있다.
   
 ### reference
   #####  <https://en.wikipedia.org/wiki/Speech_recognition>
