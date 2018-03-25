@@ -20,8 +20,7 @@ input으로 주어진 vector sequence가 각 어느 state에서 나왔는지를 
 
 <img src="/screenshots/result.png" width="30%"></img>
 
-<img src="/screenshots/ConfusionMatrix.PNG" width="70%></img>
-
+<img src="/screenshots/result.png" width="30%"></img>
 ### reference
   #### - <https://en.wikipedia.org/wiki/Speech_recognition>
   #### - <https://www.vocal.com/echo-cancellation/viterbi-algorithm-in-speech-enhancement-and-hmm/>
