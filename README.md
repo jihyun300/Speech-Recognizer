@@ -21,7 +21,7 @@ GMM-HMM을 통해 연속적으로 읽은 숫자(vector sequence)를 인식하는
 <img src="/screenshots/whole-hmm.png" width="80%"></img>
 </p>
 마지막 단어들을 연결할때는 주어진 bigram에 따라 probability 계산을 다시 해줘야 한다.
-HMM을 만드는데 힘들었던 부분은 앞 뒤로 state를 붙일 때마다, transition probability나 gaussian constant를 계속 업데이트해줘야 하는 것이었다.
+앞 뒤로 state를 붙일 때마다, transition probability나 gaussian constant를 계속 업데이트해주는 작업이 까다로웠다.
 
 ## 2. Viterbi Algorithm
 이제 Viterbi알고리즘을 살펴보자.
